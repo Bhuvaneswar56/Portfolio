@@ -11,11 +11,7 @@ function About() {
         </h2>
         <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 shadow-xl">
           <p className="text-lg text-gray-300 leading-relaxed">
-            Professional with 2+ years of experience in AWS Datacenter Operations with exposure to DCIM (Data Center
-            Infrastructure Management) tools and web interfaces. Experience in maintaining and contributing to
-            datacenter monitoring dashboards, combined with strong full-stack development skills gained through
-            intensive MERN stack training. Leveraging infrastructure knowledge and newly acquired development
-            expertise to transition into a software development role.
+          Professional with 2+ years of AWS Datacenter Operations experience, combining infrastructure expertise with advanced full-stack development skills. Proficient in MERN stack (MongoDB, Express.js, React.js, Node.js), DCIM tools, and modern web technologies. Creating scalable applications and monitoring solutions.
           </p>
         </div>
       </div>
