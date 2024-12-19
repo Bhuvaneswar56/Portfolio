@@ -36,8 +36,7 @@ function Home() {
               </h1>
 
               <p className="text-base lg:text-lg text-gray-300">
-                Full-stack developer with 2+ years of experience at AWS, specializing in frontend development
-                and infrastructure management tools. Expert in React.js, Node.js, and cloud technologies.
+              Full-stack developer leveraging 2+ years of AWS experience with comprehensive MERN stack proficiency. Building scalable web applications and monitoring solutions using React.js, Node.js, Express.js, MongoDB, and cloud technologies.
               </p>
             </div>
 

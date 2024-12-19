@@ -7,30 +7,67 @@ function Experience() {
       title: 'Data Center Engineering Operations',
       company: 'Amazon Web Services (AWS)',
       duration: 'Aug 2022 - Apr 2024',
-      keyContributions: [
-        'Developed and maintained frontend components for datacenter infrastructure monitoring dashboard using React.js and Redux, improving operational visibility by 40%',
-        'Implemented interactive rack visualization interface using JavaScript and CSS, enabling real-time monitoring of server status and resource utilization',
-        'Created responsive maintenance scheduling interface with React.js, streamlining the change management process',
-        'Built real-time alert notification system frontend, reducing response time to critical events by 30%',
-        'Led cross-functional teams in implementing infrastructure improvements, ensuring zero-downtime deployments',
-        'Managed critical facility operations with focus on high availability and security standards',
-        'Developed and maintained technical documentation for operational procedures'
+      sections: [
+        {
+          title: 'DCIM & Technical Systems',
+          contributions: [
+            'Contributed to DCIM tool implementation for infrastructure monitoring',
+            'Assisted in developing and maintaining web-based dashboards for facility monitoring',
+            'Created and updated technical documentation and wikis using web technologies',
+            'Collaborated with technical teams on monitoring system improvements',
+            'Helped streamline data visualization for operational metrics'
+          ]
+        },
+        {
+          title: 'Infrastructure Operations',
+          contributions: [
+            'Led cross-functional teams in implementing infrastructure improvements, ensuring zero-downtime deployments',
+            'Managed critical facility operations with focus on high availability and security standards',
+            'Developed and maintained technical documentation for operational procedures',
+            'Coordinated with vendors and internal teams for seamless infrastructure updates'
+          ]
+        }
       ],
       technologies: [
-        'React.js', 'Redux', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'Docker', 'AWS', 'Linux'
+        'DCIM Tools', 'Web Technologies', 'Documentation', 'Infrastructure Monitoring', 'Security Protocols'
       ]
     },
     {
       title: 'Data Center Engineering Operations Intern',
       company: 'Amazon Web Services (AWS)',
       duration: 'Feb 2022 - Jul 2022',
-      keyContributions: [
-        'Assisted in developing user interfaces for internal tools using JavaScript',
-        'Contributed to documentation and standard operating procedures',
-        'Participated in infrastructure monitoring and maintenance activities'
+      sections: [
+        {
+          title: 'Key Contributions',
+          contributions: [
+            'Assisted in developing user interfaces for internal tools using JavaScript',
+            'Contributed to documentation and standard operating procedures',
+            'Participated in infrastructure monitoring and maintenance activities'
+          ]
+        }
       ],
       technologies: [
-        'JavaScript', 'HTML', 'CSS', 'Documentation', 'Infrastructure Monitoring'
+        'JavaScript', 'Documentation', 'Infrastructure Monitoring', 'Internal Tools'
+      ]
+    },
+    {
+      title: 'Full Stack MERN Development Bootcamp',
+      company: 'Intensive Training Program',
+      duration: 'July 2024 - Nov 2024',
+      sections: [
+        {
+          title: 'Key Contributions',
+          contributions: [
+            'Built scalable e-commerce platform with complete user authentication and payment integration',
+            'Developed GitHub repository analytics dashboard with real-time search capabilities',
+            'Created social media application featuring real-time updates and content management',
+            'Mastered full-stack development including frontend, backend, and DevOps technologies',
+            'Implemented responsive design patterns and modern UI/UX principles'
+          ]
+        }
+      ],
+      technologies: [
+        'React.js', 'Redux', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Socket.io', 'Tailwind CSS'
       ]
     }
   ];
@@ -63,18 +100,20 @@ function Experience() {
                   </div>
                 </div>
 
-                {/* Key Contributions */}
-                <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-white mb-4">Key Contributions</h4>
-                  <ul className="space-y-3">
-                    {exp.keyContributions.map((contribution, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-300">
-                        <CircleDot className="w-4 h-4 mt-1 flex-shrink-0 text-blue-400" />
-                        <span>{contribution}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {/* Sections with Contributions */}
+                {exp.sections.map((section, sectionIndex) => (
+                  <div key={sectionIndex} className="mb-6">
+                    <h4 className="text-lg font-semibold text-white mb-4">{section.title}</h4>
+                    <ul className="space-y-3">
+                      {section.contributions.map((contribution, idx) => (
+                        <li key={idx} className="flex items-start gap-3 text-gray-300">
+                          <CircleDot className="w-4 h-4 mt-1 flex-shrink-0 text-blue-400" />
+                          <span>{contribution}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
 
                 {/* Technologies */}
                 <div>
