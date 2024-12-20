@@ -51,7 +51,7 @@ function Home() {
               </button>
 
               <a
-                href="public/assets/Bhuvaneswar_Resume .pdf"
+                href="public/assets/Bhuvaneswar_Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium transition-colors"
               >
